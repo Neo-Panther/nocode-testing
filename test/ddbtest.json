@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "steps":
+  [
+    {
+      "operation": "CreateTable",
+      "input":{
+        "table_name": "itsatable",
+        "key": {
+          "hash_key": {
+            "name": "itsahashkey",
+            "type": "S"
+          },
+          "sort_key": {
+            "name": "itsasortkey",
+            "type": "S"
+          }
+      }
+      }
+    },
+    {
+      "operation": "Wait",
+      "input": {
+        "wait_time": 5
+      }
+    },
+    {
+      "operation": "CreateEntry",
+      "input": {
+        "table_name": "itsatable",
+        "item": {
+          "itsahashkey": "yoyo",
+          "itsasortkey": "nono",
+          "Pull": null,
+          "yada": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "operation": "DeleteEntry",
+      "input": {
+        "table_name": "itsatable",
+        "key": {
+          "itsahashkey": "yoyo",
+          "itsasortkey": "nono"
+        }
+      }
+    },
+    {
+      "operation": "DeleteTable",
+      "input": {
+        "table_name": "itsatable"
+      }
+    }
+  ]
+}

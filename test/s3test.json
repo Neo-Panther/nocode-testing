@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "steps":
+  [
+    {
+      "operation": "CreateBucket",
+      "input": {
+        "bucket_name": "nuebucket"
+      }
+    },
+    {
+      "operation": "Wait",
+      "input": {
+        "wait_time": 5
+      }
+    },
+    {
+      "operation": "DeleteBucket",
+      "input": {
+        "bucket_name": "nuebucket"
+      }
+    }
+  ]
+}

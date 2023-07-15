@@ -1,0 +1,10 @@
+{
+  "steps": [
+    {
+      "operation": "DoMagic",
+      "input": {
+        "task": "Solve Global Warming"
+      }
+    }
+  ]
+}
