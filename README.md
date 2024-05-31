@@ -1,6 +1,6 @@
 # nocode-testing
 
-This is a Integration Test Framework which allows developers/users to run their integration test based on json config files.
+This is an Integration Testing Framework which allows developers/users to run their integration test for their AWS cloud infrastructure based on json config files.
 
 ## To Deploy
 Open the Framework folder in terminal
@@ -100,7 +100,7 @@ The responsibility of clean up of resources used in the test_group falls to the 
 ### Input Assumptions
 These restrictions are placed on the input, the execution will fail or produce incorrect results if these are not followed. The framework will not verify the input for these.
 1. The input provided is in the correct format and has all required information for the test
-2. In the case of parallel runs, each run will have tests with mutually exclusive resources modified, althoud read may be done on the same resource
+2. In the case of parallel runs, each run will have tests with mutually exclusive resources modified, although read may be done on the same resource
 
 ## Sample Input
 Input to sfn for the sample test in this version (give "*" as dependency, to run a test at the end):
